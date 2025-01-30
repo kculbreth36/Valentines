@@ -16,7 +16,7 @@ body {
 }
 
 .wrong-answer img {
-    width: 250px; /* Adjust size if needed */
+    width: 250px;
     border-radius: 10px;
 }
 
@@ -27,7 +27,7 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out; /* Smooth animation */
+    transition: all 0.3s ease-in-out;
 }
 button, .answer-btn {
     font-family: 'Patrick Hand', cursive;
