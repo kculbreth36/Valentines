@@ -41,7 +41,7 @@ function handleAnswerClick(event) {
 }
 
 
-// Add event listeners to all answer buttons
+// Event listeners to all answer buttons
 document.querySelectorAll(".answer-btn").forEach(button => {
     button.addEventListener("click", handleAnswerClick);
 });
