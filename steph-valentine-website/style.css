@@ -1,0 +1,83 @@
+body {
+    font-family: 'Patrick Hand', cursive;
+    background-color: #ffe6e6;
+    color: #d63384;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrong-answer {
+    margin-top: 10px;
+}
+
+.wrong-answer img {
+    width: 250px; /* Adjust size if needed */
+    border-radius: 10px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+button, .answer-btn {
+    font-family: 'Patrick Hand', cursive;
+}
+
+#yes-btn {
+    background-color: #ff4081;
+    color: white;
+}
+
+#no-btn {
+    background-color: #ff80ab;
+    color: white;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+.answer-btn {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    background-color: #ff80ab;
+    color: white;
+}
+
+
+div[id^="question"], #identity-screen, #valentine-screen {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ff80ab;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+#valentine-screen h2 {
+    animation: heartBeat 1s infinite;
+}
+
+@keyframes floatUp {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-50px); }
+}

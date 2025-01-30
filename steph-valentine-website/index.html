@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Confirmation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Identity Confirmation Screen -->
+    <div id="identity-screen">
+        <h1>Please answer a few questions to confirm you're actually Steph first.</h1>
+        <button id="start-btn">OK</button>
+    </div>
+
+    <!-- Question 1 -->
+    <div id="question1" class="hidden">
+        <h2>Question 1: What is Steph's favorite flower? 🌻</h2>
+        <button class="answer-btn" data-correct="false">Rose</button>
+        <button class="answer-btn" data-correct="true">Sunflower</button>
+        <button class="answer-btn" data-correct="false">Dandelion</button>
+        <button class="answer-btn" data-correct="false">Tulip</button>
+        <div class="wrong-answer hidden">
+            <img src="https://2.gall-gif.com/hygall/files/attach/images/82/548/213/133/d5cf88cd73abe145a5f0070f44f57fce.gif" alt="Wrong Answer" class="gif">
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div id="question2" class="hidden">
+        <h2>Question 2: Where did we go on our first date?</h2>
+        <p style="font-size: 14px; color: gray;">(Better not get it wrong!!)</p>
+        <button class="answer-btn" data-correct="false">Movie Theater to see Howl's Moving Castle</button>
+        <button class="answer-btn" data-correct="false">Putt Putt after Italian Food</button>
+        <button class="answer-btn" data-correct="true">The Battery</button>
+        <button class="answer-btn" data-correct="false">Hiking up Kennesaw Mountain</button>
+        <div class="wrong-answer hidden">
+            <img src="https://2.gall-gif.com/hygall/files/attach/images/82/548/213/133/d5cf88cd73abe145a5f0070f44f57fce.gif" alt="Wrong Answer" class="gif">
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div id="question3" class="hidden">
+        <h2>Question 3: What is Steph's favorite thing to read?</h2>
+        <button class="answer-btn" data-correct="false">Red Rising, the book I gave you 🙄</button>
+        <button class="answer-btn" data-correct="false">Great Gatsby</button>
+        <button class="answer-btn" data-correct="true">The Letter😒</button>
+        <button class="answer-btn" data-correct="false">Way of Kings</button>
+        <div class="wrong-answer hidden">
+            <img src="https://2.gall-gif.com/hygall/files/attach/images/82/548/213/133/d5cf88cd73abe145a5f0070f44f57fce.gif" alt="Wrong Answer" class="gif">
+        </div>
+    </div>
+
+    <!-- Valentine's Proposal -->
+    <div id="valentine-screen" class="hidden">
+        <h1>Hey Steph, I have a question for you...</h1>
+        <h2>Will you be my Valentine? ❤️</h2>
+        
+        <div class="buttons">
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
+        </div>
+
+        <p id="response-message" class="hidden">Yay! Can't wait to celebrate with you! 🎉❤️</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
